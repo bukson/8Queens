@@ -163,4 +163,4 @@ dev = ["argcomplete", "attrs (>=19.2)", "hypothesis (>=3.56)", "mock", "pygments
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "4fc50d2d21cb62ca0d272af13a5442c17367afe6ba4a5cb0b15ad426f04f1429"
+content-hash = "a1bf36d68cddfbd233617741f12b04477212aa1ff1dea3a0490b3bc9fc00c2d0"

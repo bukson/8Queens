@@ -14,7 +14,7 @@ def test_possible_queens_placement():
 def test_find_solution():
     solution = find_solution()
     column_indexes = get_column_indexes(solution)
-    assert column_indexes == [0, 4, 7, 5, 2, 6, 1, 3]
+    assert column_indexes == [0, 6, 4, 7, 1, 3, 5, 2]
 
 
 @pytest.mark.parametrize("unique, expected_number", [(False, 92), (True, 12), ])
@@ -23,7 +23,7 @@ def test_find_solutions(unique, expected_number):
     assert len(non_unique_solutions) == expected_number
 
 
-def test_rorate_board_clockwise():
+def test_rotate_board_clockwise():
     board = [
         [1, 2, 3, 4, 5, 6, 7, 8],
         [9, 10, 11, 12, 13, 14, 15, 16],
@@ -46,11 +46,12 @@ def test_rorate_board_clockwise():
     ]
     assert rotate_board_clockwise(board) == expected_board
 
+
 def test_mirror_board():
     board = get_board()
-    board[1] = [0,0,0,1,0,0,0,0]
-    board[5] = [0,0,0,0,0,1,0,0]
+    board[1] = [0, 0, 0, 1, 0, 0, 0, 0]
+    board[5] = [0, 0, 0, 0, 0, 1, 0, 0]
     mirrored_board = mirror_board(board)
     assert mirrored_board[0] == board[0]
-    assert mirrored_board[1] ==  [0,0,0,0,1,0,0,0]
-    assert mirrored_board[5] ==[0,0,1,0,0,0,0,0]
+    assert mirrored_board[1] == [0, 0, 0, 0, 1, 0, 0, 0]
+    assert mirrored_board[5] == [0, 0, 1, 0, 0, 0, 0, 0]

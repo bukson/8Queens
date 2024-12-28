@@ -1,14 +1,18 @@
 [tool.poetry]
 name = "8queens"
+package-mode = false
 version = "0.1.0"
 description = ""
-authors = ["Michał Bukowski <michal.bukowski@buksoft.pl"]
+authors = ["Michał Bukowski <michal.bukowski@buksoft.pl>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-pytest = "^8.3.4"
+pillow = "^11.0.0"
 
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
 
 [build-system]
 requires = ["poetry-core"]
