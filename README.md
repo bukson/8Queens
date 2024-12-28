@@ -1,5 +1,7 @@
 # 8 Queens problem solver
 
+![demo.png](demo.png)
+
 This is a visualiser of [8 Queens Puzzle](https://en.wikipedia.org/wiki/Eight_queens_puzzle) 
 written in Python 3.12 and tkinter.
 
